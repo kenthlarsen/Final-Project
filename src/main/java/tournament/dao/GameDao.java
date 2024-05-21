@@ -1,5 +1,10 @@
 package tournament.dao;
 
-public interface GameDao {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import tournament.entity.Game;
+
+
+	public interface GameDao  extends JpaRepository<Game, Long> {
 
 }
