@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    username: final_tournament
+    password: final_tournament
+    url: jdbc:mysql://localhost:3306/final_tournament
+    
+ 
