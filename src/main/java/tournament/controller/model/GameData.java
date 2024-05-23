@@ -10,11 +10,13 @@ public class GameData {
 	
 	private Long gameId;
 	private String gameName;
+	private String gameDay;
 	private String gameTime;
 	
 	public GameData(Game game) {
 		gameId = game.getGameId();
 		gameName = game.getGameName();
+		gameDay = game.getGameDay();
 		gameTime = game.getGameTime();
 	}
 

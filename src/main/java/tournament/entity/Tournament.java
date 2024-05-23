@@ -41,7 +41,7 @@ public class Tournament {
 
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@OneToMany(mappedBy = "petStore", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Team> teams = new HashSet<>();
 	
 

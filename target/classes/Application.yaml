@@ -4,4 +4,12 @@ spring:
     password: final_tournament
     url: jdbc:mysql://localhost:3306/final_tournament
     
- 
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+    
+  sql:
+    init:
+      mode: always

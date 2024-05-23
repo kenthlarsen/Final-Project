@@ -23,6 +23,7 @@ public class Game {
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private Long gameId;
 		private String gameName;
+		private String gameDay;
 		private String gameTime;
 
 		@JsonIgnore
