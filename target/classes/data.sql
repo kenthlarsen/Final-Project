@@ -31,3 +31,22 @@ INSERT INTO game (game_day, game_name, game_time)
 VALUES('Friday', 'Game 15', '1:00 pm');
 INSERT INTO game (game_day, game_name, game_time)
 VALUES('Friday', 'Game 16', '3:00 pm');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
