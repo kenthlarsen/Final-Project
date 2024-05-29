@@ -208,5 +208,10 @@ public class TournamentService {
 		tournamentDao.delete(tournament);
 
 	}
+	@Transactional(readOnly = false)
+	public void deleteTeamById(Long tournamentId) {
+		Tournament tournament = findTournamentById(tournamentId);
+		tournamentDao.delete(tournament);
 
+	}
 }

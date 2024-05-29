@@ -72,5 +72,11 @@ public class TournamentController {
 			return Map.of("message", "Deletion of Tournament with ID=" + tournamentId + " was successful.");
 		
 	}
-
+		@DeleteMapping("/team/{teamId}")
+		public Map<String, String> deleteTeamById(@PathVariable Long teamId) {
+			log.info("Deleting Team with ID=()", teamId);
+			tournamentService.deleteTeamById(teamId);
+			return Map.of("message", "Deletion of Team with ID=" + teamId + " was successful.");
+		
+	}
 }
