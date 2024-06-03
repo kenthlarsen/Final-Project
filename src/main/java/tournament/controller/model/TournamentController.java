@@ -38,7 +38,7 @@ public class TournamentController {
 			log.info("Updated Tournament Id={}", tournamentData);
 			return tournamentService.saveTournament(tournamentData);
 		}
-
+				
 		@PostMapping("/{tournamentId}/game")
 		@ResponseStatus(code = HttpStatus.CREATED)
 		public GameData addGame(@PathVariable Long tournamentId, @RequestBody GameData tournamentGame) {
